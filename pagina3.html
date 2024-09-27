@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Conteúdo Livre</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: #4CAF50;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+            background-color: white;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            margin: 20px auto;
+            text-align: left;
+            max-width: 400px;
+        }
+
+        label, input, textarea {
+            display: block;
+            margin: 10px 0;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+    <script>
+        function simularEnvio(event) {
+            event.preventDefault(); // Evita o envio do formulário
+            alert("Formulário enviado com sucesso!");
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1> Formulário de Contato</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pagina2.html">Currículo</a></li>
+            <li><a href="pagina3.html">Conteúdo Livre</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Entre em Contato</h2>
+        <p>Preencha o formulário abaixo para enviar uma mensagem:</p>
+
+        <form onsubmit="simularEnvio(event)">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem aqui"></textarea>
+            
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <br><br>
+
+        <p>Quer saber mais sobre HTML? <a href="https://www.w3schools.com/html/" target="_blank">Clique aqui</a> para acessar o W3Schools.</p>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por Ian Léo Ramlow © 2024</p>
+    </footer>
+
+</body>
+</html>
